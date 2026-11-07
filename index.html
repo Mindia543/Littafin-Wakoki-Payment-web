@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10251d">
+  <meta name="description" content="Support the outreach of Glorious Path Evangelical Ministry.">
+  <title>Support Our Outreach | Glorious Path Evangelical Ministry</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page-shell">
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Glorious Path Evangelical Ministry home">
+        <span class="brand-mark" aria-hidden="true">✳</span>
+        <span class="brand-copy"><strong>GLORIOUS PATH</strong><small>EVANGELICAL MINISTRY</small></span>
+      </a>
+      <span class="secure-note"><span class="status-dot"></span> Secure giving</span>
+    </header>
+
+    <section class="giving-layout" aria-label="Make a contribution">
+      <div class="giving-intro">
+        <p class="eyebrow dark"><span></span> YOUR GENEROSITY MATTERS</p>
+        <h2>Support our<br>outreach</h2>
+        <p>Choose an amount and your bank. You’ll review and authorize the transfer on your phone.</p>
+        <div class="giving-promise"><span class="promise-icon">♡</span><span><strong>Given freely, received with gratitude.</strong><small>Your contribution supports ministry outreach.</small></span></div>
+      </div>
+
+      <form class="payment-card" id="payment-form" novalidate>
+        <div class="card-heading"><div><span>Amount</span></div><span class="naira-badge">₦</span></div>
+
+        <div class="amount-grid" role="group" aria-label="Suggested contribution amounts">
+          <button type="button" class="amount-option" data-amount="200">₦200</button>
+          <button type="button" class="amount-option" data-amount="500">₦500</button>
+          <button type="button" class="amount-option" data-amount="1000">₦1,000</button>
+          <button type="button" class="amount-option" data-amount="5000">₦5,000</button>
+        </div>
+
+        <div class="amount-entry" id="amount-entry">
+          <div class="input-wrap"><span>₦</span><input id="custom-amount" type="number" inputmode="numeric" min="100" max="2147483647" step="1" placeholder="Enter amount" aria-label="Amount" autocomplete="off"></div>
+        </div>
+
+        <div class="divider"><span></span><small>PAYMENT METHOD</small><span></span></div>
+        <label class="field-label" for="bank-select">Select Bank</label>
+        <div class="select-wrap"><select id="bank-select" required>
+          <option value="" selected disabled>Select your bank</option>
+          <option value="access">Access Bank</option>
+          <option value="uba">UBA</option>
+          <option value="union">Union Bank</option>
+          <option value="zenith">Zenith Bank</option>
+          <option value="first">First Bank</option>
+          <option value="gtbank">Guaranty Trust Bank</option>
+          <option value="opay">OPay</option>
+          <option value="palmpay">PalmPay</option>
+          <option value="ecobank">Ecobank</option>
+          <option value="fcmb">FCMB</option>
+        </select><span class="select-chevron">⌄</span></div>
+        <div class="bank-hint" id="bank-hint" aria-live="polite">The phone number you use should be registered with your bank.</div>
+
+        <div class="summary-row"><span>Your contribution</span><strong id="amount-summary">Enter amount</strong></div>
+        <button class="pay-button" id="pay-button" type="submit"><span>PAY</span><span aria-hidden="true">↗</span></button>
+        <p class="error-message" id="form-error" role="alert"></p>
+        <p class="safety-note"><span>◈</span> Your PIN is entered only in your bank’s secure USSD menu.</p>
+      </form>
+    </section>
+
+    <section class="steps-strip" aria-label="How giving works">
+      <div class="strip-title"><span>✳</span><strong>Simple, secure, meaningful.</strong></div>
+      <div class="mini-step"><b>1</b><span>Choose your<br>amount</span></div><div class="strip-arrow">→</div>
+      <div class="mini-step"><b>2</b><span>Select your<br>bank</span></div><div class="strip-arrow">→</div>
+      <div class="mini-step"><b>3</b><span>Review and<br>confirm on phone</span></div>
+    </section>
+    <footer><span>© <span id="year"></span> Glorious Path Evangelical Ministry</span><span>Thank you for standing with our outreach <b>♡</b></span></footer>
+  </main>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
