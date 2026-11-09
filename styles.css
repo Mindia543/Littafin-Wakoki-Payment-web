@@ -40,6 +40,9 @@
   .steps-strip{display:none}
   footer{min-height:58px;font-size:8px}
 }
+
+.transfer-recipient{margin:0 0 17px;color:#edf3ed;font-size:13px;font-weight:600;letter-spacing:.2px;text-align:center;text-transform:uppercase}
+.transfer-recipient strong{font-weight:800}
 @media(max-width:360px){
   .page-shell{padding:0 14px}
   .hero-copy{padding-left:19px;padding-right:19px}
