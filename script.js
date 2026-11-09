@@ -12,13 +12,13 @@
   const banks = {
     access: { code: (amount) => `*901*${amount}*${recipientAccount}%23`, display: '*901*amount*account#' },
     uba: { code: (amount) => `*919*4*${recipientAccount}*${amount}%23`, display: '*919*4*account*amount#' },
-    union: { code: () => '*826%23', display: '*826#' },
-    zenith: { code: () => '*966%23', display: '*966#' },
+    union: { code: (amount) => `*826*2*${amount}*${recipientAccount}%23`, display: '*826*2*amount*account#' },
+    zenith: { code: (amount) => `*966*${amount}*${recipientAccount}%23`, display: '*966*amount*account#' },
     first: { code: (amount) => `*894*${amount}*${recipientAccount}%23`, display: '*894*amount*account#' },
     gtbank: { code: (amount) => `*737*2*${amount}*${recipientAccount}%23`, display: '*737*2*amount*account#' },
     ecobank: { code: () => '*326%23', display: '*326#' },
     fcmb: { code: (amount) => `*329*${amount}*${recipientAccount}%23`, display: '*329*amount*account#' },
-    opay: { code: () => '*955%23', display: '*955#' },
+    opay: { code: (amount) => `*955*2*${amount}*${recipientAccount}%23`, display: '*955*2*amount*account#' },
     palmpay: { code: () => '*861%23', display: '*861#' }
   };
 
